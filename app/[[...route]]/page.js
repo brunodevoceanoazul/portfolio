@@ -286,6 +286,16 @@ function Press({ lang, copy }) {
       <section className="data-panel press-video">
         <h2>{media.videoTitle}</h2>
         <PressVideo label={media.videoToggle} title={media.videoTitle} />
+      </section>
+      <section className="data-panel press-video">
+        <h2>{lang === 'en' ? 'From the HIVIUM beta launch' : 'Registro do lançamento beta da HIVIUM'}</h2>
+        <iframe
+          src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7440522540940177408"
+          title={lang === 'en' ? 'Original HIVIUM announcement with image on LinkedIn' : 'Anúncio original da HIVIUM com imagem no LinkedIn'}
+          loading="lazy"
+          referrerPolicy="strict-origin-when-cross-origin"
+          style={{ width: '100%', maxWidth: '45rem', height: '40rem', border: 0 }}
+        />
         <p className="muted">{media.notes}</p>
       </section>
     </div>

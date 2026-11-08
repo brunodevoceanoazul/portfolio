@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 360">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0v24" fill="none" stroke="#507366" stroke-width=".55"/>
+    </pattern>
+  </defs>
+  <path fill="url(#grid)" d="M0 0h440v360H0z"/>
+  <g fill="none" stroke-width="1.25">
+    <circle cx="178" cy="154" r="105" stroke="#d9e6d6"/>
+    <circle cx="271" cy="154" r="105" stroke="#e0b682"/>
+    <circle cx="224.5" cy="236" r="105" stroke="#91b7a0"/>
+    <path d="M224.5 16v330M40 182h365" stroke="#91b7a0" stroke-dasharray="3 7" opacity=".62"/>
+  </g>
+  <g fill="#e0b682">
+    <circle cx="224.5" cy="182" r="5"/>
+    <circle cx="103" cy="80" r="3"/>
+    <circle cx="345" cy="80" r="3"/>
+    <circle cx="224.5" cy="341" r="3"/>
+  </g>
+  <g font-family="monospace" font-size="12" fill="#f6f3ea" letter-spacing="2">
+    <text x="35" y="59">PRODUTO</text>
+    <text x="312" y="59">ENGENHARIA</text>
+    <text x="238" y="328">IMPACTO</text>
+  </g>
+</svg>

@@ -1,0 +1,237 @@
+export const profiles = {
+  linkedin: 'https://www.linkedin.com/in/brunobisogni/',
+  github: 'https://github.com/brunodevoceanoazul/portfolio',
+  current: 'https://github.com/BrunoBDevOceanoAzul',
+  archive: 'https://github.com/brunobisognidev',
+  instagram: 'https://www.instagram.com/brunobisogni2/',
+  oceano: 'https://oceanoazul.dev.br/',
+  email: 'bruno@oceanoazul.dev.br',
+};
+
+export const sections = {
+  pt: { home: '', projects: 'projetos', data: 'dados', freelance: 'freelance', press: 'clipping', resume: 'curriculo' },
+  en: { home: '', projects: 'projects', data: 'data', freelance: 'freelance', press: 'press', resume: 'resume' },
+};
+
+const projectLinks = {
+  periscopio: 'https://www.linkedin.com/feed/update/urn:li:activity:7519483771901865985/',
+  hivium: 'https://www.linkedin.com/feed/update/urn:li:activity:7440522540940177408/',
+  iris: 'https://www.linkedin.com/feed/update/urn:li:activity:7519461241631797248/',
+  agenda: profiles.oceano,
+  find: profiles.current + '/FindAFriend',
+  bus: profiles.archive + '/like-a-bus',
+  stock: profiles.archive + '/hacksus',
+};
+
+export const sample = [
+  { month: '2026-01', requested: 120, completed: 87 },
+  { month: '2026-02', requested: 150, completed: 108 },
+  { month: '2026-03', requested: 164, completed: 128 },
+  { month: '2026-04', requested: 176, completed: 146 },
+  { month: '2026-05', requested: 189, completed: 157 },
+  { month: '2026-06', requested: 210, completed: 183 },
+];
+
+export const query = `SELECT month,
+       SUM(requested) AS requested,
+       SUM(completed) AS completed,
+       ROUND(100.0 * SUM(completed)
+         / NULLIF(SUM(requested), 0), 1) AS completion_pct
+FROM request_metrics
+GROUP BY month
+ORDER BY month;`;
+
+export const content = {
+  pt: {
+    lang: 'pt-BR',
+    skip: 'Pular para o conteúdo',
+    nav: { home: 'Início', projects: 'Projetos', data: 'Dados', freelance: 'Freelance', press: 'Clipping', resume: 'Currículo' },
+    language: 'Idioma',
+    primary: 'Navegação principal',
+    contact: 'Contato',
+    location: 'Campinas, SP · Brasil',
+    eyebrow: 'Produto · Engenharia · Dados',
+    headline: ['Lidero times.', 'Construo software.'],
+    intro: 'Sou Bruno Bisogni, desenvolvedor full stack e líder de produto e tecnologia. Trabalho da descoberta à implementação, com interesse em saúde mental, educação e outras iniciativas de impacto social.',
+    cta: 'Explorar projetos',
+    paths: [
+      ['resume', 'Para recrutadores', 'Veja minha experiência full stack, liderança técnica, formação e currículo.'],
+      ['data', 'Para equipes de dados', 'Conheça meu trabalho com BigQuery e Power BI e explore uma amostra de análise em SQL.'],
+      ['freelance', 'Para clientes', 'Vamos definir e construir um MVP, uma integração ou um painel para apoiar decisões.'],
+    ],
+    featured: 'Projetos em foco',
+    viewAll: 'Ver todos os projetos',
+    trajectory: 'Do design à liderança técnica',
+    bio: 'Comecei pelo design de jogos e mídias interativas. Passei por integrações em logística e varejo, gestão de times e análise de dados. Depois reuni engenharia e produto no Sócio do Tabuleiro. Hoje aplico essa experiência na Oceano Azul, na ÍRIS e no desenvolvimento do Periscópio.',
+    closing: 'Vamos conversar?',
+    projectsIntro: 'Meu papel em cada projeto, decisões de produto e engenharia, e links para o código ou relatos públicos quando disponíveis.',
+    projectList: [
+      ['periscopio', 'Periscópio', 'Saúde mental e educação · MVP em validação interna', 'Desenvolvimento full stack de fluxos de encaminhamento entre educação e saúde, com formulários, permissões por papel e atenção aos dados sensíveis.', 'TypeScript · Next.js · Fastify · PostgreSQL', 'Relato sobre o MVP'],
+      ['hivium', 'Sócio do Tabuleiro / HIVIUM', 'Produto e engenharia · Beta anunciado', 'Como fundador, líder de produto e CTO, conduzi a evolução da operação de aluguel de jogos e coordenei integrações de logística e contratos digitais.', 'Discovery · Liderança técnica · Integrações', 'Relato do lançamento beta'],
+      ['iris', 'ÍRIS', 'Impacto social · Segurança pessoal', 'Como fundador, participei da mudança de foco do produto e do desenho da experiência para apoiar a rede de confiança de mulheres em encontros.', 'Estratégia de produto · Pesquisa · Experiência de uso', 'Relato sobre o projeto'],
+      ['agenda', 'Agenda SUS', 'GovTech · Protótipo de hackathon', 'Proposta coletiva de agendamento e reorganização de filas, apresentada no 2º Hackathon IMA Campinas em 2017.', 'Prototipagem · Fluxos de atendimento', 'Histórico do hackathon'],
+      ['find', 'FindAFriend', 'Desenvolvimento full stack · Código público', 'Aplicação prática para adoção de animais com busca por cidade, cadastro de organizações e gerenciamento de perfis.', 'React · TypeScript · Fastify · Prisma · PostgreSQL · Docker Compose', 'Código e instruções de execução'],
+      ['bus', 'Like a Bus', 'Mobilidade · Protótipo de hackathon', 'Projeto em equipe que usava reconhecimento de imagem para estimar a ocupação de ônibus. Primeiro lugar no Hack in Sampa 3, em 2019.', 'Reconhecimento de imagem · Mobilidade', 'Repositório histórico'],
+      ['stock', 'Mapa de estoques do SUS', 'Saúde pública · Protótipo de hackathon', 'Protótipo coletivo de mapa de calor para explorar o risco de falta de medicamentos em unidades de saúde ao longo do tempo.', 'Georreferenciamento · Visualização de dados', 'Repositório histórico'],
+    ],
+    dataIntro: 'Análise de dados para investigar operações, acompanhar indicadores e transformar perguntas de produto em métricas que uma equipe consegue usar.',
+    dataWork: 'Experiência e projetos',
+    dataCases: [
+      ['wtime · Customer Insights', 'Analista sênior entre 2022 e 2023. Trabalhei com indicadores de observabilidade e painéis em BigQuery e Power BI.', profiles.oceano, 'Histórico profissional'],
+      ['Mapa de estoques do SUS', 'Protótipo que combinou informações de estoque, consumo e localização para visualizar risco de falta de medicamentos.', projectLinks.stock, 'Código histórico'],
+    ],
+    sampleTitle: 'Amostra de análise em SQL',
+    sampleIntro: 'Exemplo independente com dados fictícios. A pergunta é como a taxa de conclusão de solicitações mudou ao longo de seis meses.',
+    sampleMethod: 'A taxa divide solicitações concluídas pelo total recebido em cada mês. Para consolidar o período, divida a soma das concluídas pela soma das recebidas.',
+    table: ['Mês', 'Recebidas', 'Concluídas', 'Taxa'],
+    download: 'Baixar dados fictícios em CSV',
+    sql: 'Ver consulta SQL',
+    freelanceIntro: 'Posso ajudar a organizar um produto que ainda está no papel ou assumir uma parte bem definida de uma entrega em andamento.',
+    services: [
+      ['Discovery e plano de MVP', 'Entrevistas, definição de prioridades e um plano de entrega com critérios claros para testar as primeiras hipóteses.'],
+      ['Desenvolvimento e integrações', 'Aplicações web, APIs e integrações, com documentação para a equipe que vai operar e manter o software.'],
+      ['Dados e painéis', 'Definição de métricas, consultas SQL, análise exploratória e painéis para perguntas de produto e operação.'],
+    ],
+    how: 'Como podemos começar',
+    steps: ['Conte o problema, para quem é e em que estágio está.', 'Alinhamos escopo, entregáveis e critérios de aceitação.', 'Organizamos as entregas e combinamos a passagem para o seu time.'],
+    email: 'Conversar por e-mail',
+    subject: 'Projeto freelance para conversar',
+    resumeTitle: 'Desenvolvedor Full Stack · Liderança técnica',
+    summary: 'Desenvolvedor full stack com experiência em interfaces web, APIs REST, modelagem de dados e integrações. Atuação como CTO e líder de produto, coordenando equipes e acompanhando entregas da descoberta à implementação.',
+    skillsTitle: 'Competências técnicas',
+    skills: ['Frontend · TypeScript, JavaScript, React, Next.js, HTML e CSS.', 'Backend e dados · Node.js, Fastify, APIs REST, SQL, PostgreSQL, Prisma e Drizzle.', 'Ferramentas · Git, Docker Compose, BigQuery e Power BI.'],
+    experience: 'Experiência selecionada',
+    roles: [
+      ['ÍRIS · Fundador', 'Participei da mudança de foco e do desenho de produto para apoiar redes de confiança em encontros.'],
+      ['Oceano Azul · Fundador e consultor de tecnologia', 'Consultoria de produto, arquitetura de software e desenvolvimento full stack.'],
+      ['Sócio do Tabuleiro · Fundador e líder de produto | 2023–2026', 'Também atuei como CTO e líder técnico (2023–2025). Conduzi a evolução da plataforma e coordenei integrações de logística e contratos digitais.'],
+      ['wtime · Analista sênior de Customer Insights | 2022–2023', 'Indicadores de observabilidade e painéis com BigQuery e Power BI.'],
+      ['DevBoutique · Tech Lead e gerente de projetos | 2021–2023', 'Coordenei projetos de software e equipes multifuncionais.'],
+      ['Levoo e Food Finder · CTO | 2019–2020', 'Conduzi integrações em logística e varejo e a implementação de um sistema de afiliados na Levoo.'],
+    ],
+    resumeProjects: 'Projetos técnicos',
+    education: 'Formação e qualificações',
+    qualifications: ['Bacharelado em Game & Interactive Media Design · Universidade Anhembi Morumbi.', 'Founder Institute · Programa de aceleração e Advisor Lab.', 'Liderança de produto · Escola DNC. Salesforce Development · FIAP.'],
+    print: 'Imprimir ou salvar em PDF',
+  },
+  en: {
+    lang: 'en',
+    skip: 'Skip to content',
+    nav: { home: 'Home', projects: 'Projects', data: 'Data', freelance: 'Freelance', press: 'Press', resume: 'Résumé' },
+    language: 'Language',
+    primary: 'Main navigation',
+    contact: 'Contact',
+    location: 'Campinas, São Paulo · Brazil',
+    eyebrow: 'Product · Engineering · Data',
+    headline: ['I lead teams.', 'I build software.'],
+    intro: 'I’m Bruno Bisogni, a full-stack developer and product and technology lead. I work from discovery through implementation and am interested in software for mental health, education, and social impact.',
+    cta: 'Explore my work',
+    paths: [
+      ['resume', 'For recruiters', 'Review my full-stack experience, technical leadership, education, and résumé.'],
+      ['data', 'For data teams', 'See my work with BigQuery and Power BI, and explore a sample SQL analysis.'],
+      ['freelance', 'For clients', 'Let’s define and build an MVP, an integration, or a dashboard that answers a practical question.'],
+    ],
+    featured: 'Featured work',
+    viewAll: 'See all projects',
+    trajectory: 'From design to technical leadership',
+    bio: 'I started in game and interactive media design, then worked on logistics and retail integrations, team delivery, and data analysis. At Sócio do Tabuleiro, I brought product and engineering together. I now apply that experience through Oceano Azul, ÍRIS, and my development work on Periscópio.',
+    closing: 'Let’s talk',
+    projectsIntro: 'My role on each project, product and engineering decisions, and links to public code or write-ups where available.',
+    projectList: [
+      ['periscopio', 'Periscópio', 'Mental health and education · MVP in internal validation', 'Full-stack development on referral workflows between schools and healthcare teams, including forms and role-based access for sensitive information.', 'TypeScript · Next.js · Fastify · PostgreSQL', 'Read the MVP write-up'],
+      ['hivium', 'Sócio do Tabuleiro / HIVIUM', 'Product and engineering · Beta announced', 'As founder, product lead, and CTO, I led the evolution of the game rental platform and coordinated logistics and digital contract integrations.', 'Discovery · Technical leadership · Integrations', 'Read the beta announcement'],
+      ['iris', 'ÍRIS', 'Social impact · Personal safety', 'As founder, I worked on a product pivot and helped design an experience that supports women’s trusted contacts during dates.', 'Product strategy · Research · User experience', 'Read the project write-up'],
+      ['agenda', 'Agenda SUS', 'GovTech · Hackathon prototype', 'A team prototype for scheduling and managing queues in public healthcare, presented at the 2017 IMA Campinas Hackathon.', 'Prototyping · Healthcare workflows', 'See hackathon background'],
+      ['find', 'FindAFriend', 'Full-stack development · Public code', 'A pet adoption practice project with city-based search, organization accounts, and pet profile management.', 'React · TypeScript · Fastify · Prisma · PostgreSQL · Docker Compose', 'View code and setup instructions'],
+      ['bus', 'Like a Bus', 'Urban mobility · Hackathon prototype', 'A team project that used image recognition to estimate bus occupancy. It placed first at Hack in Sampa 3 in 2019.', 'Image recognition · Urban mobility', 'View the original repository'],
+      ['stock', 'Public health stock map', 'Public health · Hackathon prototype', 'A team heatmap prototype to explore the risk of medication shortages at public health units over time.', 'Geospatial data · Data visualization', 'View the original repository'],
+    ],
+    dataIntro: 'I use data analysis to investigate operations, track performance, and turn product questions into metrics teams can act on.',
+    dataWork: 'Experience and projects',
+    dataCases: [
+      ['wtime · Customer Insights', 'Senior analyst from 2022 to 2023. Worked on observability metrics and dashboards with BigQuery and Power BI.', profiles.oceano, 'See career background'],
+      ['Public health stock map', 'A prototype that combined stock, consumption, and location data to visualize the risk of medication shortages.', projectLinks.stock, 'View the original code'],
+    ],
+    sampleTitle: 'SQL analysis sample',
+    sampleIntro: 'A standalone example with synthetic data. The question is how the request completion rate changed over six months.',
+    sampleMethod: 'The monthly rate divides completed requests by requests received. For the overall rate, divide total completions by total requests.',
+    table: ['Month', 'Received', 'Completed', 'Rate'],
+    download: 'Download the synthetic CSV',
+    sql: 'View SQL query',
+    freelanceIntro: 'I can help shape an early product idea or take on a clearly scoped part of an existing project.',
+    services: [
+      ['Discovery and MVP planning', 'Interviews, prioritization, and a delivery plan with clear criteria for testing early assumptions.'],
+      ['Development and integrations', 'Web applications, APIs, and integrations, with documentation for the team that will operate and maintain them.'],
+      ['Data and dashboards', 'Metric definitions, SQL queries, exploratory analysis, and dashboards for product and operations questions.'],
+    ],
+    how: 'How we can get started',
+    steps: ['Share the problem, who it affects, and where the project stands.', 'We agree on the scope, deliverables, and acceptance criteria.', 'We plan delivery and handoff to your team.'],
+    email: 'Email me about a project',
+    subject: 'Freelance project inquiry',
+    resumeTitle: 'Full-Stack Developer · Technical Lead',
+    summary: 'Full-stack developer with experience building web interfaces, REST APIs, data models, and integrations. Former CTO and product lead with experience coordinating cross-functional teams from discovery through implementation.',
+    skillsTitle: 'Technical skills',
+    skills: ['Frontend · TypeScript, JavaScript, React, Next.js, HTML, and CSS.', 'Backend and data · Node.js, Fastify, REST APIs, SQL, PostgreSQL, Prisma, and Drizzle.', 'Tools · Git, Docker Compose, BigQuery, and Power BI.'],
+    experience: 'Selected experience',
+    roles: [
+      ['ÍRIS · Founder', 'Worked on a product pivot and helped design features that support trusted contacts during dates.'],
+      ['Oceano Azul · Founder and technology consultant', 'Product consulting, software architecture, and full-stack development.'],
+      ['Sócio do Tabuleiro · Founder and Product Lead | 2023–2026', 'Also served as CTO and Tech Lead (2023–2025). Led platform development and coordinated logistics and digital contract integrations.'],
+      ['wtime · Senior Customer Insights Analyst | 2022–2023', 'Worked on observability metrics and dashboards with BigQuery and Power BI.'],
+      ['DevBoutique · Tech Lead and Project Manager | 2021–2023', 'Coordinated software projects and cross-functional teams.'],
+      ['Levoo and Food Finder · CTO | 2019–2020', 'Led logistics and retail integrations and the delivery of an affiliate system at Levoo.'],
+    ],
+    resumeProjects: 'Technical projects',
+    education: 'Education and credentials',
+    qualifications: ['Bachelor’s degree in Game & Interactive Media Design · Universidade Anhembi Morumbi.', 'Founder Institute · Accelerator program and Advisor Lab.', 'Product leadership · Escola DNC. Salesforce Development · FIAP.'],
+    print: 'Print or save as PDF',
+  },
+};
+
+export function projectHref(id) {
+  return projectLinks[id];
+}
+
+const pressSources = {
+  chamber: 'https://www.saopaulo.sp.leg.br/blog/vencedores-do-hack-in-sampa-recebem-premiacao-na-camara/',
+  health: 'https://prefeitura.sp.gov.br/web/saude/w/noticias/233129',
+  cpqd: 'https://www.momentoeditorial.com.br/eventos/anuariots/Anuario-TeleSintese-Inovacao-em-Comunicacoes-2017.pdf',
+  ludopedia: 'https://ludopedia.com.br/topico/72869/bruno-bisogni-do-socio-do-tabuleiro-e-a-minha-vez-26',
+  incubator: 'https://pt.linkedin.com/posts/brunobisogni_imatech-ima-incuba%C3%A7%C3%A3o-activity-7362151315222749184-xBiG',
+  sebrae: 'https://sebraeforstartups.sebraesp.com.br/wp-content/uploads/Listagem_startups_start_primeiras_vendas_2026-apos-lista-de-espera.pdf',
+};
+
+export const press = {
+  pt: {
+    intro: 'Projetos, prêmios de equipe e registros públicos da minha trajetória, dos hackathons de saúde e mobilidade aos produtos em que trabalho hoje.',
+    title: 'Projetos e prêmios em ordem cronológica',
+    videoTitle: 'A premiação do Like a Bus na TV Câmara',
+    videoToggle: 'Exibir vídeo da TV Câmara',
+    notes: 'Os links de cada registro levam à publicação original, à reportagem ou à galeria de imagens, conforme o material disponível.',
+    items: [
+      ['2026', 'Periscópio e ÍRIS', 'Projetos · Relatos próprios', 'Compartilhei a chegada do Periscópio à validação interna do MVP e o trabalho de produto por trás da ÍRIS, voltada à rede de confiança de mulheres em encontros.', [[projectLinks.periscopio, 'Relato do Periscópio'], [projectLinks.iris, 'Relato da ÍRIS']]],
+      ['2026', 'Beta da HIVIUM e seleção pelo Sebrae', 'Produto · Seleção institucional', 'A HIVIUM nasceu dos aprendizados do Sócio do Tabuleiro com comunidades de RPG e jogos. A empresa aparece na lista do programa Primeiras Vendas 2026 do Sebrae for Startups.', [[projectLinks.hivium, 'Anúncio da versão beta'], [pressSources.sebrae, 'Lista oficial do Sebrae (PDF)']]],
+      ['2025', 'Sócio do Tabuleiro na IMATech', 'Incubação · Seleção institucional', 'O resultado divulgado pela IMA incluiu o Sócio do Tabuleiro entre os selecionados para o programa de incubação de Campinas.', [[pressSources.incubator, 'Resultado da IMA no LinkedIn']]],
+      ['2023', 'Entrevista no podcast É a Minha Vez!', 'Entrevista · Viver de Jogo / Ludopedia', 'Conversei sobre montar um negócio de jogos de tabuleiro em Campinas, no início da trajetória do Sócio do Tabuleiro.', [[pressSources.ludopedia, 'Ouvir entrevista e ver capa']]],
+      ['2019', 'Like a Bus · 1º lugar no Hack in Sampa 3', 'Prêmio de equipe · TV Câmara SP', 'A equipe apresentou um protótipo para estimar a lotação dos ônibus em São Paulo. A TV Câmara registrou a entrega da premiação.', [[pressSources.chamber, 'Reportagem original'], [projectLinks.bus, 'Repositório do protótipo']]],
+      ['2017', 'Agenda SUS · equipe premiada no Hackathon IMA', 'Prêmio de equipe · Campinas', 'O protótipo de agendamento do SUS foi um dos três aplicativos premiados no 2º Hackathon Campinas, segundo o anuário Tele.Síntese. Meu histórico profissional registra o primeiro lugar.', [[pressSources.cpqd, 'Anuário Tele.Síntese (PDF)'], [profiles.linkedin, 'Histórico no LinkedIn']]],
+      ['2017', 'E-SUS · 2º lugar no Hackathon da Saúde', 'Prêmio de equipe · Prefeitura de São Paulo', 'A equipe propôs um mapa de calor para monitorar estoques de medicamentos a partir do consumo das unidades. A Secretaria Municipal da Saúde registrou o segundo lugar e listou os integrantes.', [[pressSources.health, 'Matéria e galeria da Prefeitura'], [projectLinks.stock, 'Código histórico']]],
+    ],
+  },
+  en: {
+    intro: 'Projects, team awards, and public records from my career, from public health and mobility hackathons to the products I work on today.',
+    title: 'A timeline of projects and awards',
+    videoTitle: 'Like a Bus at the São Paulo City Council awards ceremony',
+    videoToggle: 'Show the TV Câmara report',
+    notes: 'Each entry links to the original publication, report, or photo gallery where available. Most source material is in Portuguese.',
+    items: [
+      ['2026', 'Periscópio and ÍRIS', 'Projects · First-person updates', 'I shared the start of internal MVP validation for Periscópio and the product work behind ÍRIS, which supports women’s trusted contacts during dates.', [[projectLinks.periscopio, 'Read the Periscópio update'], [projectLinks.iris, 'Read the ÍRIS update']]],
+      ['2026', 'HIVIUM beta and Sebrae selection', 'Product · Program selection', 'HIVIUM grew out of what we learned from tabletop gaming communities at Sócio do Tabuleiro. The company appears on Sebrae’s 2026 Primeiras Vendas program list.', [[projectLinks.hivium, 'Read the beta announcement'], [pressSources.sebrae, 'Official Sebrae list (PDF)']]],
+      ['2025', 'Sócio do Tabuleiro joins IMATech', 'Incubation · Program selection', 'The results published by IMA named Sócio do Tabuleiro among the teams selected for the Campinas incubation program.', [[pressSources.incubator, 'See the IMA results on LinkedIn']]],
+      ['2023', 'Interview on É a Minha Vez!', 'Podcast interview · Viver de Jogo / Ludopedia', 'I spoke about starting a tabletop games business in Campinas during the early days of Sócio do Tabuleiro.', [[pressSources.ludopedia, 'Listen and view the episode cover']]],
+      ['2019', 'Like a Bus · 1st place at Hack in Sampa 3', 'Team award · TV Câmara SP', 'The team presented a prototype for estimating bus occupancy in São Paulo. The City Council’s TV channel covered the awards ceremony.', [[pressSources.chamber, 'Watch the original report'], [projectLinks.bus, 'View the prototype repository']]],
+      ['2017', 'Agenda SUS · IMA Campinas hackathon award', 'Team award · Campinas', 'According to the Tele.Síntese yearbook, our public healthcare scheduling prototype was one of three apps recognized at the second Campinas hackathon. My professional profile records first place.', [[pressSources.cpqd, 'Tele.Síntese yearbook (PDF)'], [profiles.linkedin, 'See my LinkedIn profile']]],
+      ['2017', 'E-SUS · 2nd place at São Paulo’s Health Hackathon', 'Team award · City of São Paulo', 'The team proposed a heatmap to track medication stock against usage at public health units. The city health department confirmed second place and named the team members.', [[pressSources.health, 'City announcement and photo gallery'], [projectLinks.stock, 'View the original code']]],
+    ],
+  },
+};

@@ -1,30 +1,21 @@
 # Bruno Bisogni
 
-**Liderança de produto e tecnologia · Desenvolvimento full stack · Impacto social**
+**Liderança de produto e tecnologia · Full-stack development · Data analysis**
 
-Lidero times e construo produtos digitais da descoberta à implementação. Meu foco é aplicar engenharia e gestão de produto a problemas de saúde mental, educação e impacto social.
+Portfólio bilíngue com projetos, trajetória, currículo, clipping e serviços freelance.
 
-- [Portfólio](https://brunodevoceanoazul.github.io/portfolio/)
-- [Currículo full stack](https://brunodevoceanoazul.github.io/portfolio/curriculo.html)
-- [Projetos e versões](https://brunodevoceanoazul.github.io/portfolio/projetos.html)
+- [Português](https://brunodevoceanoazul.github.io/portfolio/pt/) · [English](https://brunodevoceanoazul.github.io/portfolio/en/)
+- [Currículo full stack](https://brunodevoceanoazul.github.io/portfolio/pt/curriculo/) · [Full-stack résumé](https://brunodevoceanoazul.github.io/portfolio/en/resume/)
+- [Amostra de dados](https://brunodevoceanoazul.github.io/portfolio/pt/dados/) · [Data sample](https://brunodevoceanoazul.github.io/portfolio/en/data/)
+- [Clipping e prêmios](https://brunodevoceanoazul.github.io/portfolio/pt/clipping/) · [Press and awards](https://brunodevoceanoazul.github.io/portfolio/en/press/)
 - [LinkedIn](https://www.linkedin.com/in/brunobisogni/) · [Instagram](https://www.instagram.com/brunobisogni2/)
 
-## Para uma entrevista técnica
+## Rodar localmente
 
-| Projeto | Material |
-| --- | --- |
-| FindAFriend | [Código e instruções de execução](https://github.com/BrunoBDevOceanoAzul/FindAFriend) |
-| Periscópio | [Relato do MVP em validação](https://www.linkedin.com/feed/update/urn:li:activity:7519483771901865985/) |
-| Sócio do Tabuleiro | [Relato do lançamento beta da HIVIUM](https://www.linkedin.com/feed/update/urn:li:activity:7440522540940177408/) |
-| Like a Bus | [Repositório histórico](https://github.com/brunobisognidev/like-a-bus) |
-| Mapa de estoques do SUS | [Repositório histórico](https://github.com/brunobisognidev/hacksus) |
+Com Node.js 22, rode `npm ci` e `npm run dev`. A exportação estática é gerada com `npm run build` em `out`. Em GitHub Pages, use **Settings → Pages → GitHub Actions** como fonte. O fluxo de publicação configura o caminho do repositório e mantém os links antigos de currículo e projetos.
 
-Veja mais código nos perfis [BrunoBDevOceanoAzul](https://github.com/BrunoBDevOceanoAzul) e [brunobisognidev](https://github.com/brunobisognidev).
+## Adicionar uma versão demonstrável
 
-## Como adicionar versões
+Adicione o caso nos dois idiomas em `app/content.js` e vincule a tag exata de uma [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). Inclua seu papel, o que pode ser testado e como rodar. Para software privado, use uma demonstração separada e autorizada com dados fictícios ou um estudo de caso com material autorizado.
 
-1. No repositório público do software, crie uma [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) com uma tag, como `v0.1.0`, notas e instruções de execução. Se houver um ambiente de demonstração separado, inclua também seu link.
-2. Em `projetos.html`, adicione ao caso um link para a versão exata. Descreva o que dá para testar e o que você implementou. Identifique protótipos, projetos em equipe e forks pelo seu papel.
-3. Para software privado, publique somente uma demonstração autorizada, separada do produto, com dados fictícios, ou use um estudo de caso com material autorizado. Mantenha credenciais, anexos e dados reais fora da demonstração.
-
-O site usa HTML e CSS estáticos. A fonte no GitHub Pages é a raiz de `main`. No ambiente de trabalho original, os arquivos publicados estão na pasta `docs`.
+Em clipping, mantenha os links originais e indique se o material é reportagem, reconhecimento institucional ou relato próprio.

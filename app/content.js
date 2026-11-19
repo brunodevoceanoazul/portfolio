@@ -113,7 +113,7 @@ export const content = {
         "iris",
         "ÍRIS",
         "Produto · Fundador e Tech Lead",
-        "Conduzi a mudança de foco do produto e trabalho na implementação de uma plataforma de segurança pessoal para mulheres. API NestJS, interface Next.js, integrações de dados e fluxos de consentimento compõem minha atuação técnica.",
+        "Desenvolvo uma plataforma de segurança pessoal para mulheres com API em NestJS organizada como monólito modular. Minha atuação abrange a aplicação web, integrações e fluxos de consentimento, além da evolução do produto.",
         "TypeScript · NestJS · Next.js · Drizzle · PostgreSQL · AWS",
         "Relato público do produto"
       ],
@@ -121,7 +121,7 @@ export const content = {
         "periscopio",
         "Periscópio",
         "Saúde e educação · Tech Lead e full stack",
-        "Lidero a engenharia e implemento fluxos de encaminhamento entre escola e saúde. O trabalho inclui formulários, permissões por papel, histórico de casos e modelagem de dados. A aplicação está em validação interna com profissionais.",
+        "Lidero a engenharia e implemento o fluxo entre escola e saúde, desde formulários até encaminhamentos e histórico do caso. O backend é um monólito em Fastify, com rotas e responsabilidades organizadas na mesma aplicação.",
         "TypeScript · Next.js · Fastify · Drizzle · PostgreSQL",
         "Relato sobre a construção do MVP"
       ],
@@ -138,7 +138,7 @@ export const content = {
         "Radar Jurídico",
         "Produto interno · Backend e dados",
         "Trabalho com backend Python, integração de consultas jurídicas e desenho de uma política de consulta em camadas para controlar o uso de provedores pagos. O escopo inclui modelagem de dados e rastreabilidade das consultas.",
-        "Python · APIs · SQL · Modelagem de dados",
+        "Python · FastAPI · SQLAlchemy · PostgreSQL · APIs",
         "Trajetória profissional"
       ],
       [
@@ -148,6 +148,38 @@ export const content = {
         "Minha consultoria reúne levantamento de requisitos, arquitetura e desenvolvimento. O site apresenta os produtos e os projetos de integrações, saúde, mobilidade e comunidades em que atuei.",
         "Next.js · React · TypeScript · Produto",
         "Visitar o site"
+      ],
+      [
+        "wtime",
+        "Dashboards na wtime",
+        "Dados · Implementação profissional",
+        "Construí dashboards de observabilidade e indicadores com BigQuery e Power BI durante minha atuação como analista sênior, entre 2022 e 2023.",
+        "SQL · BigQuery · Power BI",
+        "Trajetória e experiência"
+      ],
+      [
+        "levoo",
+        "Levoo",
+        "Logística · Liderança técnica | 2019–2020",
+        "Liderei o projeto de sistema de afiliados e a integração entre uma operação de entregas e sistemas de um banco.",
+        "Integrações · APIs · Liderança de implementação",
+        "Histórico do projeto"
+      ],
+      [
+        "foodfinder",
+        "Food Finder",
+        "Varejo · CTO | 2019",
+        "Desenhei a integração entre a plataforma e uma rede varejista e gerenciei a equipe de implementação.",
+        "Arquitetura de integração · Gestão técnica",
+        "Histórico do projeto"
+      ],
+      [
+        "socialball",
+        "Social Ball",
+        "Produto digital · Liderança técnica | 2014–2016",
+        "Na ABCE Service, liderei o time técnico ligado ao Social Ball e ao trabalho de transição dos canais offline para online.",
+        "Produto digital · Implementação web · Liderança técnica",
+        "Histórico do projeto"
       ],
       [
         "portfolio",
@@ -250,7 +282,7 @@ export const content = {
       ],
       [
         "Oceano Azul · Fundador e Tech Lead | 2025–atual",
-        "Desenvolvimento e arquitetura de produtos para saúde, jurídico e educação. Na ÍRIS, atuação na API NestJS, aplicação Next.js, integrações e fluxos de consentimento. No Radar Jurídico, trabalho com backend Python e estratégia de consulta. Em Sauvia, definição de arquitetura, backlog e fluxos na etapa de base."
+        "Desenvolvimento e arquitetura de produtos de saúde, segurança pessoal e informação jurídica. Na ÍRIS, implementação de backend NestJS em monólito modular, frontend Next.js e integrações. No Radar Jurídico, backend Python/FastAPI, persistência com SQLAlchemy e estratégia de consultas."
       ],
       [
         "Sócio do Tabuleiro / HIVIUM · Fundador e líder de produto | 2023–2026",
@@ -270,15 +302,11 @@ export const content = {
       ]
     ],
     "resumeProjects": "Projetos técnicos",
-    "education": "Formação e qualificações",
+    "education": "Formação selecionada",
     "qualifications": [
+      "Formação Node.js · Rocketseat.",
       "Bacharelado em Game and Interactive Media Design · Universidade Anhembi Morumbi | 2017–2020.",
-      "Node.js e NestJS · Rocketseat | 2026. DDD no Node.js · Rocketseat | 2026.",
-      "REST e Níveis de Maturidade na prática · Full Cycle | 2026.",
-      "Product Manager e Product Discovery · Escola DNC | 2026.",
-      "Founder Institute · Programa de empreendedorismo | 2023. Advisor Lab.",
-      "Formação Salesforce Developer · FIAP.",
-      "Google Analytics, Data Studio e Tag Manager · ComSchool | 2020."
+      "Founder Institute · Programa de empreendedorismo e Advisor Lab."
     ],
     "print": "Imprimir ou salvar em PDF",
     "productsTitle": "Experiência com produtos",
@@ -287,8 +315,92 @@ export const content = {
     "historyTitle": "Protótipos premiados em equipe",
     "languageTitle": "Idiomas",
     "languageDetail": "Português nativo · Inglês fluente.",
-    "learningTitle": "Desenvolvimento profissional",
-    "learningDetail": "Aprendizado em Clojure e Scala, com foco em programação funcional."
+    "projectDetails": {
+      "iris": [
+        [
+          "O que faz",
+          "Organiza ações de segurança pessoal e a comunicação com uma rede de confiança."
+        ],
+        [
+          "O que implementei",
+          "Módulos e fluxos de API, interface web, integrações e registro de consentimento."
+        ],
+        [
+          "Competências demonstradas",
+          "NestJS, composição de módulos, separação de responsabilidades, persistência, permissões e integração entre frontend e backend."
+        ]
+      ],
+      "periscopio": [
+        [
+          "O que faz",
+          "Organiza observações, encaminhamentos e devolutivas entre escola e profissionais de saúde."
+        ],
+        [
+          "O que implementei",
+          "Formulários digitais, permissões por papel, transições de fluxo e histórico de casos."
+        ],
+        [
+          "Competências demonstradas",
+          "APIs Fastify, modelagem relacional, validação, controle de acesso e implementação de regras com especialistas."
+        ]
+      ],
+      "hivium": [
+        [
+          "O que faz",
+          "Conecta e organiza comunidades de jogos de tabuleiro e RPG."
+        ],
+        [
+          "O que construí",
+          "Evolução de plataforma, integrações de logística e contratos e arquitetura do produto sucessor, com liderança de desenvolvimento."
+        ],
+        [
+          "Competências demonstradas",
+          "Integração com serviços externos, arquitetura de aplicações, priorização técnica e entrega com equipe."
+        ]
+      ],
+      "radar": [
+        [
+          "O que faz",
+          "Consulta e organiza informações jurídicas por CNPJ para análise interna."
+        ],
+        [
+          "O que implementei",
+          "Backend Python, integração de provedores e estratégia de consulta em camadas para controlar o uso de dados pagos."
+        ],
+        [
+          "Competências demonstradas",
+          "FastAPI, SQLAlchemy, integração de APIs, modelagem de dados e análise de custo de consultas."
+        ]
+      ],
+      "oceano": [
+        [
+          "O que faz",
+          "Apresenta produtos, serviços e a trajetória da consultoria."
+        ],
+        [
+          "O que construí",
+          "Aplicação web e conteúdo de apresentação da Oceano Azul."
+        ],
+        [
+          "Competências demonstradas",
+          "Next.js, React, implementação web e organização da apresentação de produtos."
+        ]
+      ],
+      "wtime": [
+        [
+          "O que faz",
+          "Transforma dados operacionais em indicadores e dashboards de acompanhamento."
+        ],
+        [
+          "O que construí",
+          "Dashboards de observabilidade e métricas durante minha atuação como analista sênior."
+        ],
+        [
+          "Competências demonstradas",
+          "SQL, BigQuery, Power BI, definição de indicadores e visualização de dados."
+        ]
+      ]
+    }
   },
   "en": {
     "lang": "en",
@@ -340,7 +452,7 @@ export const content = {
         "iris",
         "ÍRIS",
         "Product · Founder and Tech Lead",
-        "I led a product pivot and work on the implementation of a personal safety platform for women. My technical work includes a NestJS API, Next.js interface, data integrations, and consent workflows.",
+        "I develop a personal safety platform for women with a NestJS API organized as a modular monolith. My work spans the web application, integrations, consent workflows, and product evolution.",
         "TypeScript · NestJS · Next.js · Drizzle · PostgreSQL · AWS",
         "Read the public product update"
       ],
@@ -348,7 +460,7 @@ export const content = {
         "periscopio",
         "Periscópio",
         "Health and education · Tech Lead and full stack",
-        "I lead engineering and implement referral workflows between schools and healthcare teams. Work includes forms, role-based permissions, case history, and data modeling. The application is in internal validation with professionals.",
+        "I lead engineering and implement the school-to-healthcare workflow, from forms to referrals and case history. The backend is a Fastify monolith with routes and responsibilities organized within one application.",
         "TypeScript · Next.js · Fastify · Drizzle · PostgreSQL",
         "Read the MVP write-up"
       ],
@@ -365,7 +477,7 @@ export const content = {
         "Radar Jurídico",
         "Internal product · Backend and data",
         "Python backend work, legal data integrations, and a layered query strategy to manage paid provider usage. The scope includes data modeling and query traceability.",
-        "Python · APIs · SQL · Data modeling",
+        "Python · FastAPI · SQLAlchemy · PostgreSQL · APIs",
         "See professional background"
       ],
       [
@@ -375,6 +487,38 @@ export const content = {
         "My consultancy covers requirements, architecture, and development. Its website introduces my work across integrations, healthcare, mobility, and communities.",
         "Next.js · React · TypeScript · Product",
         "Visit the website"
+      ],
+      [
+        "wtime",
+        "wtime dashboards",
+        "Data · Professional implementation",
+        "Built observability dashboards and metrics using BigQuery and Power BI as a senior analyst from 2022 to 2023.",
+        "SQL · BigQuery · Power BI",
+        "See professional experience"
+      ],
+      [
+        "levoo",
+        "Levoo",
+        "Logistics · Technical leadership | 2019–2020",
+        "Led an affiliate-system project and the integration between a delivery operation and a bank’s systems.",
+        "Integrations · APIs · Implementation leadership",
+        "See project background"
+      ],
+      [
+        "foodfinder",
+        "Food Finder",
+        "Retail · CTO | 2019",
+        "Designed the integration between the platform and a retail group, and managed the implementation team.",
+        "Integration architecture · Technical delivery",
+        "See project background"
+      ],
+      [
+        "socialball",
+        "Social Ball",
+        "Digital product · Technical leadership | 2014–2016",
+        "At ABCE Service, led the technical team associated with Social Ball and the transition from offline to online channels.",
+        "Digital product · Web implementation · Technical leadership",
+        "See project background"
       ],
       [
         "portfolio",
@@ -477,7 +621,7 @@ export const content = {
       ],
       [
         "Oceano Azul · Founder and Tech Lead | 2025–present",
-        "Product development and architecture for healthcare, legal, and education projects. At ÍRIS, work on a NestJS API, Next.js application, integrations, and consent workflows. At Radar Jurídico, Python backend work and query strategy. For Sauvia, architecture, backlog, and workflow design during the foundation phase."
+        "Product development and architecture across healthcare, personal safety, and legal information. At ÍRIS, work on a modular NestJS monolith, Next.js frontend, and integrations. At Radar Jurídico, Python/FastAPI backend, SQLAlchemy persistence, and query strategy."
       ],
       [
         "Sócio do Tabuleiro / HIVIUM · Founder and Product Lead | 2023–2026",
@@ -497,15 +641,11 @@ export const content = {
       ]
     ],
     "resumeProjects": "Technical projects",
-    "education": "Education and credentials",
+    "education": "Selected education",
     "qualifications": [
+      "Node.js training program · Rocketseat.",
       "Bachelor’s degree in Game and Interactive Media Design · Universidade Anhembi Morumbi | 2017–2020.",
-      "Node.js and NestJS · Rocketseat | 2026. DDD in Node.js · Rocketseat | 2026.",
-      "REST and Maturity Levels in Practice · Full Cycle | 2026.",
-      "Product Manager and Product Discovery · Escola DNC | 2026.",
-      "Founder Institute · Entrepreneurship program | 2023. Advisor Lab.",
-      "Salesforce Developer training · FIAP.",
-      "Google Analytics, Data Studio, and Tag Manager · ComSchool | 2020."
+      "Founder Institute · Entrepreneurship program and Advisor Lab."
     ],
     "print": "Print or save as PDF",
     "productsTitle": "Product engineering experience",
@@ -514,8 +654,92 @@ export const content = {
     "historyTitle": "Award-winning team prototypes",
     "languageTitle": "Languages",
     "languageDetail": "Portuguese — native · English — fluent.",
-    "learningTitle": "Professional development",
-    "learningDetail": "Learning Clojure and Scala, with a focus on functional programming."
+    "projectDetails": {
+      "iris": [
+        [
+          "What it does",
+          "Coordinates personal safety actions and communication with trusted contacts."
+        ],
+        [
+          "My implementation",
+          "API modules and workflows, web interface, integrations, and consent recording."
+        ],
+        [
+          "Engineering demonstrated",
+          "NestJS module composition, separation of responsibilities, persistence, permissions, and frontend/backend integration."
+        ]
+      ],
+      "periscopio": [
+        [
+          "What it does",
+          "Organizes observations, referrals, and feedback between schools and healthcare professionals."
+        ],
+        [
+          "My implementation",
+          "Digital forms, role-based permissions, workflow transitions, and case history."
+        ],
+        [
+          "Engineering demonstrated",
+          "Fastify APIs, relational modeling, validation, access control, and rules developed with domain specialists."
+        ]
+      ],
+      "hivium": [
+        [
+          "What it does",
+          "Connects and organizes tabletop gaming and RPG communities."
+        ],
+        [
+          "What I built",
+          "Platform evolution, logistics and contract integrations, and successor-product architecture, while leading development."
+        ],
+        [
+          "Engineering demonstrated",
+          "External integrations, application architecture, technical prioritization, and team delivery."
+        ]
+      ],
+      "radar": [
+        [
+          "What it does",
+          "Retrieves and organizes company-related legal information for internal analysis."
+        ],
+        [
+          "My implementation",
+          "Python backend, provider integrations, and a layered query strategy to manage paid data usage."
+        ],
+        [
+          "Engineering demonstrated",
+          "FastAPI, SQLAlchemy, API integration, data modeling, and query cost analysis."
+        ]
+      ],
+      "oceano": [
+        [
+          "What it does",
+          "Presents the consultancy’s products, services, and professional background."
+        ],
+        [
+          "What I built",
+          "The web application and the consultancy’s product presentation."
+        ],
+        [
+          "Engineering demonstrated",
+          "Next.js, React, web implementation, and product communication."
+        ]
+      ],
+      "wtime": [
+        [
+          "What it does",
+          "Turns operational data into indicators and monitoring dashboards."
+        ],
+        [
+          "What I built",
+          "Observability dashboards and metrics in my senior analyst role."
+        ],
+        [
+          "Engineering demonstrated",
+          "SQL, BigQuery, Power BI, metric definitions, and data visualization."
+        ]
+      ]
+    }
   }
 };
 
@@ -755,11 +979,13 @@ const projectLinks = {
   "radar": "https://www.linkedin.com/in/brunobisogni/",
   "oceano": "https://oceanoazul.dev.br/",
   "portfolio": "https://github.com/brunodevoceanoazul/portfolio",
-  "diet": "https://github.com/brunodevoceanoazul/dailydiet-rocketseat-desafio-2",
-  "ddd": "https://github.com/brunodevoceanoazul/DDD",
   "agenda": "https://oceanoazul.dev.br/",
   "bus": "https://github.com/brunobisognidev/like-a-bus",
-  "stock": "https://github.com/brunobisognidev/hacksus"
+  "stock": "https://github.com/brunobisognidev/hacksus",
+  "wtime": "https://www.linkedin.com/in/brunobisogni/",
+  "levoo": "https://oceanoazul.dev.br/",
+  "foodfinder": "https://oceanoazul.dev.br/",
+  "socialball": "https://oceanoazul.dev.br/"
 };
 
 export function projectHref(id) { return projectLinks[id]; }

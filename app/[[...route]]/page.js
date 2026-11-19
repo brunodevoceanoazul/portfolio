@@ -260,7 +260,7 @@ function Resume({ lang, copy }) {
           <li>{copy.location}</li>
           <li><a href={'mailto:' + profiles.email}>{profiles.email}</a></li>
           <li><a href={profiles.linkedin}>linkedin.com/in/brunobisogni</a></li>
-          <li><a href={profiles.current}>github.com/BrunoBDevOceanoAzul</a></li>
+          <li><a href="https://github.com/brunodevoceanoazul">github.com/brunodevoceanoazul</a></li>
         </ul>
         <div className="actions screen-only"><PrintButton label={copy.print} /></div>
       </header>

@@ -152,7 +152,7 @@ function Home({ lang, copy }) {
           <a className="text-link" href={href(lang, 'projects')}>{copy.viewAll} <span aria-hidden="true">↗</span></a>
         </div>
         <div className="cards cards-three">
-          {[copy.projectList[0], copy.projectList[1], copy.projectList[4]].map(project => <Project key={project[0]} project={project} lang={lang} compact />)}
+          {copy.projectList.filter(project => ['iris', 'periscopio', 'hivium'].includes(project[0])).map(project => <Project key={project[0]} project={project} lang={lang} compact />)}
         </div>
       </section>
       <section className="bio"><div className="wrap section split"><h2>{copy.trajectory}</h2><div><p className="intro">{copy.bio}</p><div className="actions"><a className="text-link" href={href(lang, 'press')}>{press[lang].title} ↗</a></div></div></div></section>
@@ -168,7 +168,19 @@ function Projects({ lang, copy }) {
   return (
     <div className="wrap content">
       <PageHeading title={copy.nav.projects} detail={copy.projectsIntro} label={copy.eyebrow} />
-      <div className="cards">{copy.projectList.map(project => <Project key={project[0]} project={project} lang={lang} />)}</div>
+      <section className="project-section">
+        <h2>{copy.productsTitle}</h2>
+        <div className="cards">{copy.projectList.filter(project => ['iris', 'periscopio', 'hivium', 'radar', 'oceano'].includes(project[0])).map(project => <Project key={project[0]} project={project} lang={lang} />)}</div>
+      </section>
+      <section className="project-section" id="source-code">
+        <h2>{copy.codeTitle}</h2>
+        <p className="intro">{copy.codeIntro}</p>
+        <div className="cards">{copy.projectList.filter(project => ['portfolio', 'diet', 'ddd'].includes(project[0])).map(project => <Project key={project[0]} project={project} lang={lang} />)}</div>
+      </section>
+      <section className="project-section">
+        <h2>{copy.historyTitle}</h2>
+        <div className="cards">{copy.projectList.filter(project => ['agenda', 'bus', 'stock'].includes(project[0])).map(project => <Project key={project[0]} project={project} lang={lang} />)}</div>
+      </section>
       <div className="actions"><a href={profiles.current}>GitHub · BrunoBDevOceanoAzul ↗</a><a href={profiles.archive}>GitHub · brunobisognidev ↗</a></div>
     </div>
   );
@@ -254,11 +266,13 @@ function Resume({ lang, copy }) {
       <section><h2>{copy.experience}</h2>{copy.roles.map(([role, detail]) => <div className="role" key={role}><h3>{role}</h3><p>{detail}</p></div>)}</section>
       <section>
         <h2>{copy.resumeProjects}</h2>
-        <ul>{[copy.projectList[0], copy.projectList[4]].map(([id, title, , detail]) => (
+        <ul>{copy.projectList.filter(project => ['portfolio', 'diet'].includes(project[0])).map(([id, title, , detail]) => (
           <li key={id}><strong><a href={href(lang, 'projects', '#' + id)}>{title}</a>.</strong> {detail}</li>
         ))}</ul>
       </section>
       <section><h2>{copy.education}</h2><ul>{copy.qualifications.map(item => <li key={item}>{item}</li>)}</ul></section>
+      <section><h2>{copy.languageTitle}</h2><p>{copy.languageDetail}</p></section>
+      <section><h2>{copy.learningTitle}</h2><p>{copy.learningDetail}</p></section>
     </article>
   );
 }

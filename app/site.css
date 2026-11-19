@@ -147,3 +147,8 @@ pre { overflow: auto; margin: .7rem 0 0; padding: .8rem; background: #e6ece2; bo
 .project-section { margin-bottom: 2.5rem; }
 .project-section > h2 { margin-bottom: 1rem; }
 .project-section > .intro { margin-bottom: 1rem; }
+
+.project-detail { margin: 0; }
+.project-detail div + div { margin-top: .7rem; }
+.project-detail dt { font-weight: 700; }
+.project-detail dd { margin: .15rem 0 0; color: var(--muted); }

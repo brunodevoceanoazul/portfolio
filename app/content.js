@@ -137,7 +137,7 @@ export const content = {
         "radar",
         "Radar Jurídico",
         "Produto interno · Backend e dados",
-        "Trabalho com backend Python, integração de consultas jurídicas e desenho de uma política de consulta em camadas para controlar o uso de provedores pagos. O escopo inclui modelagem de dados e rastreabilidade das consultas.",
+        "Atuo de forma colaborativa no produto e na integração de entregas. O projeto usa Python/FastAPI, SQLAlchemy, cache e integração de provedores para organizar consultas jurídicas, com histórico e controle de uso.",
         "Python · FastAPI · SQLAlchemy · PostgreSQL · APIs",
         "Trajetória profissional"
       ],
@@ -278,11 +278,11 @@ export const content = {
     "roles": [
       [
         "Periscópio · Tech Lead e desenvolvedor full stack | nov. 2025–atual",
-        "Liderança técnica e implementação de fluxos entre escolas e profissionais de saúde. Trabalho com formulários, permissões por papel, histórico de casos e modelo de dados. Stack atual em TypeScript, Next.js, Fastify, Drizzle e PostgreSQL."
+        "Liderança técnica e implementação de fluxos escola–saúde com TypeScript, Next.js, Fastify, Drizzle e PostgreSQL. Correções em máquina de estados, normalização de papéis e transições concorrentes, acompanhadas de testes de regressão e migrações."
       ],
       [
         "Oceano Azul · Fundador e Tech Lead | 2025–atual",
-        "Desenvolvimento e arquitetura de produtos de saúde, segurança pessoal e informação jurídica. Na ÍRIS, implementação de backend NestJS em monólito modular, frontend Next.js e integrações. No Radar Jurídico, backend Python/FastAPI, persistência com SQLAlchemy e estratégia de consultas."
+        "Desenvolvimento de produtos de saúde, segurança e dados. Na ÍRIS, backend NestJS em monólito modular, Next.js, persistência transacional e integrações. No Radar Jurídico, atuação colaborativa em produto e integração de entregas em Python/FastAPI e SQLAlchemy."
       ],
       [
         "Sócio do Tabuleiro / HIVIUM · Fundador e líder de produto | 2023–2026",
@@ -323,11 +323,11 @@ export const content = {
         ],
         [
           "O que implementei",
-          "Módulos e fluxos de API, interface web, integrações e registro de consentimento."
+          "Monólito modular NestJS, fluxos de API e aplicação Next.js. O código inclui persistência transacional, adaptadores de integração e testes para caminhos de sucesso e falha."
         ],
         [
           "Competências demonstradas",
-          "NestJS, composição de módulos, separação de responsabilidades, persistência, permissões e integração entre frontend e backend."
+          "Injeção de dependências, separação entre domínio e infraestrutura, transações relacionais, validação e testes automatizados."
         ]
       ],
       "periscopio": [
@@ -337,11 +337,11 @@ export const content = {
         ],
         [
           "O que implementei",
-          "Formulários digitais, permissões por papel, transições de fluxo e histórico de casos."
+          "Fluxos de casos, permissões e histórico. Alterações atribuídas à minha conta tratam normalização de papéis, transições concorrentes e migrações, com testes de regressão."
         ],
         [
           "Competências demonstradas",
-          "APIs Fastify, modelagem relacional, validação, controle de acesso e implementação de regras com especialistas."
+          "APIs Fastify, máquina de estados, transações PostgreSQL, tratamento de conflitos e testes de regressão de autorização e persistência."
         ]
       ],
       "hivium": [
@@ -365,7 +365,7 @@ export const content = {
         ],
         [
           "O que implementei",
-          "Backend Python, integração de provedores e estratégia de consulta em camadas para controlar o uso de dados pagos."
+          "Atuação no produto e na integração das entregas do time. O backend analisado usa FastAPI e SQLAlchemy, cache de consultas e adaptadores de provedores. A implementação é colaborativa."
         ],
         [
           "Competências demonstradas",
@@ -476,7 +476,7 @@ export const content = {
         "radar",
         "Radar Jurídico",
         "Internal product · Backend and data",
-        "Python backend work, legal data integrations, and a layered query strategy to manage paid provider usage. The scope includes data modeling and query traceability.",
+        "Collaborative product work and integration of team deliveries. The project uses Python/FastAPI, SQLAlchemy, query caching, and provider adapters, with query history and usage controls.",
         "Python · FastAPI · SQLAlchemy · PostgreSQL · APIs",
         "See professional background"
       ],
@@ -617,11 +617,11 @@ export const content = {
     "roles": [
       [
         "Periscópio · Tech Lead and Full-Stack Developer | Nov 2025–present",
-        "Technical leadership and implementation of school-to-healthcare workflows. Work includes forms, role-based permissions, case history, and data modeling. Current stack uses TypeScript, Next.js, Fastify, Drizzle, and PostgreSQL."
+        "Lead school-to-healthcare engineering using TypeScript, Next.js, Fastify, Drizzle, and PostgreSQL. Changes address state-machine behavior, role normalization, concurrent transitions, regression tests, and migrations."
       ],
       [
         "Oceano Azul · Founder and Tech Lead | 2025–present",
-        "Product development and architecture across healthcare, personal safety, and legal information. At ÍRIS, work on a modular NestJS monolith, Next.js frontend, and integrations. At Radar Jurídico, Python/FastAPI backend, SQLAlchemy persistence, and query strategy."
+        "Product engineering across healthcare, personal safety, and data. At ÍRIS, a modular NestJS backend, Next.js, transactions, and integrations. At Radar Jurídico, collaborative product work and integration of team deliveries using Python/FastAPI and SQLAlchemy."
       ],
       [
         "Sócio do Tabuleiro / HIVIUM · Founder and Product Lead | 2023–2026",
@@ -662,11 +662,11 @@ export const content = {
         ],
         [
           "My implementation",
-          "API modules and workflows, web interface, integrations, and consent recording."
+          "Modular NestJS monolith, API workflows, and a Next.js application. The code includes transactional persistence, integration adapters, and success/failure-path tests."
         ],
         [
           "Engineering demonstrated",
-          "NestJS module composition, separation of responsibilities, persistence, permissions, and frontend/backend integration."
+          "Dependency injection, domain/infrastructure separation, relational transactions, validation, and automated testing."
         ]
       ],
       "periscopio": [
@@ -676,11 +676,11 @@ export const content = {
         ],
         [
           "My implementation",
-          "Digital forms, role-based permissions, workflow transitions, and case history."
+          "Case workflows, permissions, and history. Changes attributed to my account address role normalization, concurrent transitions, and migrations, with regression tests."
         ],
         [
           "Engineering demonstrated",
-          "Fastify APIs, relational modeling, validation, access control, and rules developed with domain specialists."
+          "Fastify APIs, state machines, PostgreSQL transactions, conflict handling, and authorization/persistence regression tests."
         ]
       ],
       "hivium": [
@@ -704,7 +704,7 @@ export const content = {
         ],
         [
           "My implementation",
-          "Python backend, provider integrations, and a layered query strategy to manage paid data usage."
+          "Product work and integration of team deliveries. The reviewed backend uses FastAPI and SQLAlchemy, query caching, and provider adapters. Implementation is collaborative."
         ],
         [
           "Engineering demonstrated",

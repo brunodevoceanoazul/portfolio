@@ -1,21 +1,39 @@
-# Bruno Bisogni
+# Bruno Bisogni · Senior Software Developer
 
-**Liderança de produto e tecnologia · Full-stack development · Data analysis**
+Complete source code for my bilingual portfolio. The site introduces my product engineering experience, technical case studies, résumé, data analysis sample, and team awards.
 
-Portfólio bilíngue com projetos, trajetória, currículo, clipping e serviços freelance.
+[Português](https://brunodevoceanoazul.github.io/portfolio/pt/) · [English](https://brunodevoceanoazul.github.io/portfolio/en/) · [Résumé](https://brunodevoceanoazul.github.io/portfolio/en/resume/) · [LinkedIn](https://www.linkedin.com/in/brunobisogni/)
 
-- [Português](https://brunodevoceanoazul.github.io/portfolio/pt/) · [English](https://brunodevoceanoazul.github.io/portfolio/en/)
-- [Currículo full stack](https://brunodevoceanoazul.github.io/portfolio/pt/curriculo/) · [Full-stack résumé](https://brunodevoceanoazul.github.io/portfolio/en/resume/)
-- [Amostra de dados](https://brunodevoceanoazul.github.io/portfolio/pt/dados/) · [Data sample](https://brunodevoceanoazul.github.io/portfolio/en/data/)
-- [Clipping e prêmios](https://brunodevoceanoazul.github.io/portfolio/pt/clipping/) · [Press and awards](https://brunodevoceanoazul.github.io/portfolio/en/press/)
-- [LinkedIn](https://www.linkedin.com/in/brunobisogni/) · [Instagram](https://www.instagram.com/brunobisogni2/)
+## Review the implementation
 
-## Rodar localmente
+| Area | Source |
+| --- | --- |
+| Portuguese and English content | [app/content.js](app/content.js) |
+| Static routes, locale metadata, page components | [app/[[...route]]/page.js](app/%5B%5B...route%5D%5D/page.js) |
+| Document language and shared stylesheet | [app/[[...route]]/layout.js](app/%5B%5B...route%5D%5D/layout.js) |
+| Print action and on-demand video | [app/controls.js](app/controls.js) |
+| Responsive layout and print styles | [app/site.css](app/site.css) |
+| GitHub Pages build and deployment | [.github/workflows/pages.yml](.github/workflows/pages.yml) |
 
-Com Node.js 22, rode `npm ci` e `npm run dev`. A exportação estática é gerada com `npm run build` em `out`. Em GitHub Pages, use **Settings → Pages → GitHub Actions** como fonte. O fluxo de publicação configura o caminho do repositório e mantém os links antigos de currículo e projetos.
+## Run locally
 
-## Adicionar uma versão demonstrável
+Use Node.js 22 or newer.
 
-Adicione o caso nos dois idiomas em `app/content.js` e vincule a tag exata de uma [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository). Inclua seu papel, o que pode ser testado e como rodar. Para software privado, use uma demonstração separada e autorizada com dados fictícios ou um estudo de caso com material autorizado.
+```sh
+npm ci
+npm run dev
+```
 
-Em clipping, mantenha os links originais e indique se o material é reportagem, reconhecimento institucional ou relato próprio.
+Open the URL printed by Next.js. To build the static site:
+
+```sh
+npm run build
+```
+
+The export is written to `out/`. For GitHub Pages, select **GitHub Actions** as the publishing source. The workflow uses the repository base path during the build.
+
+## Add a project
+
+Edit both languages in `app/content.js`, add a link in `projectLinks`, and classify the case in the Projects component. Include your role, the implemented scope, technologies, and a suitable public reference. Runnable personal projects should include setup instructions and links to implementation commits.
+
+Professional product cases use public descriptions. The data analysis sample is explicitly labeled synthetic.

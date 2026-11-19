@@ -115,6 +115,9 @@ function Project({ project, lang, compact = false }) {
       <h2>{title}</h2>
       <p>{detail}</p>
       <p className="stack">{stack}</p>
+      {content[lang].projectDetails?.[id] && <dl className="project-detail">
+        {content[lang].projectDetails[id].map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
+      </dl>}
       <a className="text-link" href={projectHref(id)}>{link} <span aria-hidden="true">↗</span></a>
     </article>
   );
@@ -170,7 +173,7 @@ function Projects({ lang, copy }) {
       <PageHeading title={copy.nav.projects} detail={copy.projectsIntro} label={copy.eyebrow} />
       <section className="project-section">
         <h2>{copy.productsTitle}</h2>
-        <div className="cards">{copy.projectList.filter(project => ['iris', 'periscopio', 'hivium', 'radar', 'oceano'].includes(project[0])).map(project => <Project key={project[0]} project={project} lang={lang} />)}</div>
+        <div className="cards">{copy.projectList.filter(project => ['iris', 'periscopio', 'hivium', 'radar', 'oceano', 'wtime', 'levoo', 'foodfinder', 'socialball'].includes(project[0])).map(project => <Project key={project[0]} project={project} lang={lang} />)}</div>
       </section>
       <section className="project-section" id="source-code">
         <h2>{copy.codeTitle}</h2>
@@ -272,7 +275,7 @@ function Resume({ lang, copy }) {
       </section>
       <section><h2>{copy.education}</h2><ul>{copy.qualifications.map(item => <li key={item}>{item}</li>)}</ul></section>
       <section><h2>{copy.languageTitle}</h2><p>{copy.languageDetail}</p></section>
-      <section><h2>{copy.learningTitle}</h2><p>{copy.learningDetail}</p></section>
+
     </article>
   );
 }
